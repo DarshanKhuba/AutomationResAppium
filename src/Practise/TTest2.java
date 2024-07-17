@@ -1,0 +1,13 @@
+package Practise;
+
+public class TTest2 {
+	
+	public static void main(String args[]) {
+		
+	
+	TTest1 t = new TTest1();
+	System.out.println(t.x);
+	t.m1();
+
+	}
+}
