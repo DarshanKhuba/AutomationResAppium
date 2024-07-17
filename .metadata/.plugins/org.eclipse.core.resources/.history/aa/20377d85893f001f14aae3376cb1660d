@@ -1,0 +1,31 @@
+package SeleniumWebDriverAssignment;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
+
+public class LoginWithCorrectDetails {
+
+	WebDriver driver;
+	LoginWithCorrectDetails lwcd;
+
+	@BeforeSuite
+
+	public void setUp() {
+
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+
+		lwcd = new LoginWithCorrectDetails(driver);
+
+	}
+
+	@Test(priority = 1)
+	public void login() throws InterruptedException {
+		lwcd.url();
+		lwcd.login("darshankhuba0@gmail.com", "Likith@123");
+		lwcd.closeBrowser();
+	}
+
+}

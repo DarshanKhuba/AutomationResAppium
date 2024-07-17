@@ -1,0 +1,7 @@
+package Loops;
+
+public class D09Pyramid {
+
+	public static void main(Sring[] args) {
+		for(int i = 1)
+}

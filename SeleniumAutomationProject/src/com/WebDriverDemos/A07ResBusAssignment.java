@@ -1,0 +1,42 @@
+package com.WebDriverDemos;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class A07ResBusAssignment {
+	public static void main(String[] args) {
+		ChromeOptions op = new ChromeOptions();
+		op.addArguments("--disable-notifications");
+		
+		WebDriver driver = new ChromeDriver(op);
+		driver.manage().window().maximize();
+		
+		driver.get("https://www.redbus.in/");
+		
+		//From
+		driver.findElement(By.id("src")).sendKeys("Bang");
+		driver.findElement(By.xpath("//*[@id=\"autoSuggestContainer\"]/div/div[1]/div/div[1]/ul/li[1]/div/text")).click();
+		
+	
+		//To
+		driver.findElement(By.id("dest")).sendKeys("basav");
+		driver.findElement(By.xpath("//*[@id=\"autoSuggestContainer\"]/div/div[3]/div[1]/ul/li[1]/div/text")).click();
+		
+		//On
+		driver.findElement(By.xpath("//*[@id=\"onwardCal\"]/div/i")).click();
+		driver.findElement(By.xpath("/html[1]/body[1]/section[1]/div[2]/main[1]/div[3]/div[1]/div[2]/div[1]/div[4]/div[1]/div[2]/div[1]/div[1]/div[3]/div[6]/span[1]/div[7]/span[1]")).click();
+		
+		//button
+		driver.findElement(By.id("search_button")).click();
+		
+		//Output
+		System.out.println(driver.findElement(By.xpath("//*[@id=\"19537918\"]/div/div[1]/div[1]/div[1]/div[1]")).getText());
+		
+		driver.close();
+		
+	}
+	
+
+}

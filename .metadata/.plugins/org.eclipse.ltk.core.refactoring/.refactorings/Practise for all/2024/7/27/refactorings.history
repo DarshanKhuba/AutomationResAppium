@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Practise.Collection&apos; to &apos;CollectionListInter&apos;&#x0D;&#x0A;- Original project: &apos;Practise for all&apos;&#x0D;&#x0A;- Original element: &apos;Practise.Collection&apos;&#x0D;&#x0A;- Renamed element: &apos;Practise.CollectionListInter&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Collection&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Practise{Collection.java[Collection" matchStrategy="1" name="CollectionListInter" qualified="false" references="true" similarDeclarations="false" stamp="1719909218563" textual="false" version="1.0"/>
+</session>

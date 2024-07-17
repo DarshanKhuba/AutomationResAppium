@@ -1,0 +1,52 @@
+package Practise;
+
+interface Shape
+{
+	int length=10;            //final and ststic
+	int width=20;                  //final static
+	
+	void circle();   //abstract method
+	
+	default void square()
+	{
+		System.out.println("This is queue......");
+	}
+	static void rectangle()
+	{
+		System.out.println("this is rectangle-static method");
+	}
+}
+
+
+
+
+
+
+
+
+public class InterfaceDemo implements Shape 
+{
+	public void circle()
+	{
+		System.out.println("This is circle-abstract method");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method st
+		
+		//Scenario 1
+	/*	InterfaceDemo ir = new InterfaceDemo();
+		ir.circle();//abstract
+		ir.square();//defaul
+		
+		rectangle();//static method csn directly access from interface*/
+		
+		//Scenario 2
+		Shape sh = new Interfacedemo();
+		sh.circle();
+		sh.square();
+		Shape.rectangle();
+
+	}
+
+}

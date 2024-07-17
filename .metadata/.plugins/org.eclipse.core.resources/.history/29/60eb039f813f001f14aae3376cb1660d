@@ -1,0 +1,36 @@
+package SeleniumWebDriverAssignment;
+public class Assignment21 {
+	//Login with correct details
+WebDriver driver;
+	
+    //Creating Constructor
+	public LoginWithCorrectDetails(WebDriver idriver) {
+		driver = idriver;
+		PageFactory.initElements(driver, this);
+
+	}
+	
+	@FindBy(id="email") WebElement email;
+	@FindBy(id="pass") WebElement pswd;
+	@FindBy(name="login") WebElement login;
+	
+	
+	public void url() {
+		driver.get("https://www.facebook.com/");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
+	}
+	
+	public void login(String eml, String pass) {
+		email.sendKeys(eml);
+		pswd.sendKeys(pass);
+		login.click();
+	}
+	
+	public void closeBrowser() throws InterruptedException {
+		Thread.sleep(5000);
+		driver.close();
+	}
+
+
+}

@@ -1,0 +1,30 @@
+package Practise;
+
+interface Shape
+{
+	int length=10;            //final and ststic
+	int width=20;                  //final static
+	
+	void circle();   //abstract method
+	
+	default void square()
+	{
+		System.out.println("This is queue......");
+	}
+}
+
+
+
+
+
+
+
+
+public class InterfaceDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

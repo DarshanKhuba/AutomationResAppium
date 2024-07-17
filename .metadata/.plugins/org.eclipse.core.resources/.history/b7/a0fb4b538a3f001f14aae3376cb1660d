@@ -1,0 +1,35 @@
+package SeleniumWebDriverAssignment;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
+
+public class LoginWithCorrectDetailsClient {
+
+	WebDriver driver;
+	LoginWithCorrectDetails lwcd;
+
+	@BeforeSuite
+
+	public void setUp() {
+
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.get("https://www.facebook.com/");
+
+		lwcd = new LoginWithCorrectDetails();
+
+	}
+
+	@Test(priority = 1)
+	public void login() throws InterruptedException {
+		lwcd.url();
+		lwcd.login("darshankhuba0@gmail.com", "Likith@123");
+		lwcd.closeBrowser();
+	}
+
+}

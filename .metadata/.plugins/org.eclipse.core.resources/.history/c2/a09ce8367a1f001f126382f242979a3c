@@ -1,0 +1,13 @@
+package Functions;
+
+public class Passingargument {
+	public static void calculateaddition(int n01, int no2)
+	{
+		int sum = no1 + no2;
+		System.out.println("Addition: " + sum);
+	}
+	public static void main(string [] args) {
+		calculateaddition(33, 30);
+	}
+ 
+}

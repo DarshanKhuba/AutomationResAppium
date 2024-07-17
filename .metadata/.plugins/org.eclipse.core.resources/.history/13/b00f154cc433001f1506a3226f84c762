@@ -1,0 +1,25 @@
+package Practise;
+
+import java.util.Scanner;
+
+public class P01Average {
+
+	public static void main(String args[]) {
+		// TODO Auto-generated method stub
+		//Enter 3 numbers from the user and make a funtion to print their averages
+		
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter num1 : ");
+		double a = sc.nextDouble();
+		System.out.println("Enter num2 : ");
+		double b = sc.nextDouble();
+		System.out.println("Enter num3 : ");
+		double c = sc.nextDouble();
+		
+		
+		double average = (a + b + c) / 3 ;
+		System.out.println("Average of three numbers: " + average);
+	}
+
+}

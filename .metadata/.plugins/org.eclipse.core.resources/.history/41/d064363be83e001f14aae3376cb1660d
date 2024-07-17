@@ -1,0 +1,20 @@
+package SeleniumWebDriverAssignment;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Assignment04 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://qavalidation.com/demo-form/");
+		driver.findElement(By.xpath("//input[@id='g4072-fullname']")).sendKeys("Darshan");
+		driver.findElement(By.xpath("//input[@id='g4072-email']")).sendKeys("darshankhuba0@gmail.com");
+		driver.findElement(By.xpath("//input[@id='g4072-phonenumber']")).sendKeys("9876543210");
+		driver.findElement(By.xpath("//button[normalize-space()='Submit!']")).click();
+		System.out.println("Test Pass");
+	}
+}

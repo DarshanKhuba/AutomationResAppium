@@ -1,0 +1,19 @@
+package Practise;
+
+public class DataConversionWrapper {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//String--------Integer
+		
+		//String s = "Welcome";    // cannot convert to int because its alphabet
+		//int sint = Integer.parseInt(s)
+
+		String s1 = "10";
+		String s2 = "20";
+		
+		System.out.println(Integer.parseInt((s1) + Integer.parseInt(s2));
+	}
+
+}

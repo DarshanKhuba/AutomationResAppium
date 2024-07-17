@@ -1,0 +1,21 @@
+package com.BasicDemos;
+
+import java.util.Scanner;
+
+public class D04CalculateSQRT {
+	
+	public static void main(String[] args) {  
+		int no, sq;
+		Scanner scn = new Scanner(System.in);
+		
+		System.out.print("Enter any number: ");
+		no = scn.nextInt();
+		
+		sq = no * no;
+		System.out.println("Square of" + no + " is: " + sq);
+		
+	}
+
+}
+
+

@@ -1,0 +1,19 @@
+package Functions;
+
+public class Retuenfunction {
+	
+	public static double calareaofcircle(int rd)
+	{
+		double area = 3.142 * rd * rd;
+		return area;
+	}
+
+	public static void main(String[] args) {
+		double area = calareaofcircle(5);
+		System.out.println("Area of circlr: " + area);
+		
+		
+
+	}
+
+}
