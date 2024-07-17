@@ -1,4 +1,9 @@
 this is project doc
 
 
+<<<<<<< HEAD
 changes are also be done by master...
+=======
+
+changes made by tester...
+>>>>>>> tester
